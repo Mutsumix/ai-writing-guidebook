@@ -2,9 +2,12 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - article.re
-
-APPENDIX:
+  - 01_handson.re
+  - 02_cursor.re
+  - 03_syntax.re
+  - 04_under_the_hood.re
+  - 05_why_write.re
+  - 06_publish.re
 
 POSTDEF:
-  - contributors.re
+  - postscript.re
