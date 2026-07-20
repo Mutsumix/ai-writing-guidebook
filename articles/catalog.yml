@@ -3,11 +3,12 @@ PREDEF:
 
 CHAPS:
   - 01_handson.re
-  - 02_cursor.re
-  - 03_syntax.re
-  - 04_under_the_hood.re
-  - 05_why_write.re
-  - 06_publish.re
+  - 02_git_github.re
+  - 03_review_template.re
+  - 04_syntax.re
+  - 05_cursor.re
+  - 06_why_write.re
+  - 07_publish.re
 
 POSTDEF:
   - postscript.re
