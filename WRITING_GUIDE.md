@@ -11,11 +11,12 @@ articles/            … 全章の.reスケルトン+catalog.yml
   catalog.yml        … 章構成(テンプレート側のものと差し替え)
   preface.re         … はじめに
   01_handson.re      … 第1章 いきなり本を作る
-  02_cursor.re       … 第2章 Cursorと書く(本体)
-  03_syntax.re       … 第3章 記法カタログ(左右対比・案A)
-  04_under_the_hood.re … 第4章 仕組みの話(読み飛ばし可)
-  05_why_write.re    … 第5章 AI時代になぜ書くのか
-  06_publish.re      … 第6章 本にして届ける
+  02_git_github.re   … 第2章 Git/GitHubが執筆を支える
+  03_review_template.re … 第3章 Re:VIEWとTechBoosterテンプレート
+  04_syntax.re       … 第4章 記法カタログ(ソース→出力の実演方式)
+  05_cursor.re       … 第5章 Cursorと書く(本体)
+  06_why_write.re    … 第6章 AI時代になぜ書くのか
+  07_publish.re      … 第7章 本にして届ける
   postscript.re      … おわりに
 references/
   sources.md       … 全参照資料のURL+要点(R1〜R15)。Cursorの一次情報庫
@@ -30,7 +31,7 @@ references/
 3. 鹿野さんのgist 2本を skills/ ディレクトリに保存(sources.mdR12・R13のURL参照)
 4. 手元の FirstStepReVIEW-v3.pdf を references/ に置く(任意)
 5. pushしてビルドが通ることを確認(スケルトンだけでもPDFになります)
-6. (任意)Chrome DevTools MCPをCursorに設定する → 第2章「キャプチャも任せる」で使う。
+6. (任意)Chrome DevTools MCPをCursorに設定する → 第5章「キャプチャも任せる」で使う。
    設定方法と注意点はsources.mdR16を参照
 
 ## .reファイルの読み方
@@ -44,9 +45,9 @@ references/
 ## 書き進め方(合意済みの方針)
 
 - 準備を先にしない。第1章のハンズオンを自分でやりながら第1章を書くのが最初の作業
-- 実体験の章(2章・5章)は著者がラフを書き、AIに整えさせる。逆にしない
-- 参照整理の章(1・3・4・6章)はsources.mdを基にAIに展開させてよい。出典脚注を忘れない
-- 優先順位: 第1章・第3章(講習会で必須)→ 第2章 → 残り
+- 実体験の章(5章・6章)は著者がラフを書き、AIに整えさせる。逆にしない
+- 参照整理の章(1・2・3・4・7章)はsources.mdを基にAIに展開させてよい。出典脚注を忘れない
+- 優先順位: 第1章・第4章(講習会で必須)→ 第5章 → 残り
 
 ## 最初の一手(リポジトリをクローンした直後にやること)
 
