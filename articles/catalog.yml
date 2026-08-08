@@ -1,13 +1,21 @@
 PREDEF:
+  ## 本書の手順について
   - preface.re
 
 CHAPS:
+  ## いきなり本を作る
   - 01_handson.re
+  ## AIを使って本を作るための手順
   - 02_git_github.re
+  ## Re:VIEWとテンプレートを使って本を作るための手順
   - 03_review_template.re
+  ## 記法カタログ
   - 04_syntax.re
+  ## Cursorの使い方
   - 05_cursor.re
+  ## なぜ自分で書くのか
   - 06_why_write.re
+  ## 印刷所に出す方法
   - 07_publish.re
 
 POSTDEF:
