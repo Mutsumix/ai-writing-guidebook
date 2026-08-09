@@ -2,6 +2,7 @@ node_modules/
 Gemfile.lock
 *.pdf
 .sass-cache/
+.DS_Store
 
 articles/*.pdf
 articles/*.epub
