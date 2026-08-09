@@ -68,17 +68,17 @@ GitHubではこの置き場所を「リポジトリ」と呼びます@<fn>{repos
 https://github.com/TechBooster/ReVIEW-Template
 //}
 
-画面の右上に「Use this template」という緑色のボタンがあります。
+画面の右上に「Use this template」という緑色のボタンがあります(@<img>{use_this_template})。
 これを押して「Create a new repository」を選んでください。
 
-#@# TODO(スクショ): Use this templateボタンの画面 → images/01_handson/use_this_template.png
+//image[use_this_template][「Use this template」ボタン][scale=0.75]
 
 次の画面で、リポジトリの名前を決めます。
 なんでも構いませんが、半角英数字にしてください(例: my-first-book)。
 公開範囲は「Private」(自分だけが見られる)を選んでおけば安心です。
-最後に「Create repository」を押します。
+最後に「Create repository」を押します(@<img>{create_repository})。
 
-#@# TODO(スクショ): リポジトリ作成画面 → images/01_handson/create_repository.png
+//image[create_repository][リポジトリ作成画面][scale=0.75]
 
 これで、あなたの本の置き場所ができました。
 「テンプレート」の中身が何なのかは、第3章で説明します。
@@ -164,9 +164,9 @@ TODO config.ymlのbooktitleとautを設定するか
 
 ちなみにここの●をクリックすると、今どんな処理が行われているかが見られます。そのうち意味が分かるときが来るでしょう。処理が終わると●が✔︎に変わります。
 
-ブラウザでGitHubの自分のリポジトリのページを開き、上部の「Actions」タブをクリックしてください。
+ブラウザでGitHubの自分のリポジトリのページを開き、上部の「Actions」タブをクリックしてください(@<img>{actions_tab})。
 
-#@# TODO(スクショ): Actionsタブ → images/01_handson/actions_tab.png
+//image[actions_tab][リポジトリ上部の「Actions」タブ][scale=0.75]
 
 さきほど送信した内容が、一覧のいちばん上に並んでいます。
 名前の横に緑色のチェックマークが付いていれば、組み立ては完了です(@<img>{actions_list})。

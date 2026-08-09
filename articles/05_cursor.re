@@ -41,12 +41,20 @@ Cursorという優れたAIエディタに使わせることで、執筆は次の
 
 まず、Cursorは何かについて簡単に知っておきましょう。
 
-- Cursorについて
-創業者
-Xによる買収
-成長率
+Cursorは、Anysphere社がつくるAI搭載のコードエディタです。
+2022年にMIT出身のMichael Truellら4人が創業し、Visual Studio Codeを土台にAI機能を厚くした製品として広まりました@<fn>{cursor_company}。
 
-課金体系について
+成長の速さは異例と呼べるほどです。
+報道では、年換算の売上高が2025年初頭の約1億ドルから、2026年2月頃には約20億ドル規模まで伸びたとされています。
+2026年6月には、SpaceXがAnysphereを約600億ドル相当の株式交換で買収する契約を発表しました。
+「X（旧Twitter）」ではなく、買収主体はSpaceXです。
+
+料金は無料のHobbyプランから始められます。
+個人向けの有料はProが月額20ドルで、その上にPro+（月額60ドル）、Ultra（月額200ドル）があります@<fn>{cursor_pricing}（2026年8月時点）
+本書の執筆用途なら、まずHobbyかProで十分なことが多いです。
+
+//footnote[cursor_company][Anysphere / Cursor。@<href>{https://cursor.com/}]
+//footnote[cursor_pricing][料金体系は@<href>{https://cursor.com/pricing}]
 
 - Cursorの画面
 買収の話とも絡むが、単なるVSCodeっぽいエディタからその対象とする領域を広げようとしている
@@ -66,7 +74,7 @@ IDEの画面を開きましょう
 AGENTS.md、ルール、スキル
 そういったものは執筆時には使っていません。
 AIのモデル、Cursorともに毎日のようにアップデートが入り、
-凡人がルール化した手順はAIが
+凡人がルール化した手順はAIがすぐに基本機能として吸収してくれるので、
 
 
 == 記法はCursorが知っている
@@ -74,6 +82,7 @@ AIのモデル、Cursorともに毎日のようにアップデートが入り、
 まず、記法をCursorに理解させる。
 
 TODO: 記法の理解のさせ方
+/articles/doc/format.ja.md
 
 第4章にRe:VIEWの記法カタログを載せましたが、あれを覚える必要はありません。
 Cursorが知っているからです。
