@@ -268,7 +268,6 @@ URLは「＠<href>」で書きます。
 カンマの後ろに文字を書くと、URLの代わりにその文字が表示されます。
 出力はこうなります。
 
-@<br>{}
 @<href>{https://reviewml.org/}
 
 @<href>{https://reviewml.org/, Re:VIEW公式サイト}
