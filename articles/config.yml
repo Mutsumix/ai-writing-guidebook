@@ -458,7 +458,7 @@ pdfmaker:
   # 奥付を作成するか。trueを指定するとデフォルトの奥付、ファイル名を指定するとそれがcolophon.htmlとしてコピーされる
   colophon: true
   # 表紙挿入時に表紙のページ番号名を「cover」とし、偶数ページ扱いにして大扉前に白ページが入るのを防ぐ。デフォルトはtrue
-  # use_cover_nombre: true
+  use_cover_nombre: false
   #
   # 囲み表現の切り替え設定
   # column, note, memo, tip, info, warning, important, caution, noticeを設定可
