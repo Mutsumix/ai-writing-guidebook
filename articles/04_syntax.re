@@ -92,16 +92,17 @@ Re:VIEWでは、続けて書いた行は同じ段落にまとめられます。
 空白行のあとに続きます。
 //}
 
-出力はこうなります。
+出力はこうなります。@<fn>{forcedbr}
+//blankline
 
 このように強制的に改行できます。@<br>{}
 ここは次の行です。
 
 //blankline
 
-空白行のあとに続きます@<fn>{forcedbr}。
+空白行のあとに続きます。
 
-//footnote[forcedbr][PDF向けのLaTeXでは、＠<br>{}を連続で並べると「There's no line here to end」でビルドが落ちます。空白行が欲しいときは//blanklineを使います。]
+//footnote[forcedbr][PDF向けのLaTeXでは、＠<br>{}を連続で並べると「There's no line here to end」でビルドが落ちます。空白行が欲しいときは//blanklineを使うよう注意が必要です。]
 
 == 箇条書き
 
