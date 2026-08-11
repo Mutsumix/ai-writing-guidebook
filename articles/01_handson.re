@@ -86,12 +86,13 @@ Cursorを起動すると、最初の画面に「Clone Repository」という選�
 
 //image[clone_repository][Cursor起動直後の「Clone Repository」画面][scale=0.75]
 
-これを選び、「Clone from GitHub」でさきほど作ったリポジトリを選んでください。
+これを選び、「Clone from GitHub」でさきほど作ったリポジトリを選んでください(@<img>{clone_in_cursor})。
+
+//image[clone_in_cursor][Cursorでリポジトリをクローンしている画面][scale=0.75]
+
 途中でGitHubとの連携を求める画面が出たら、案内に従って許可します。この認証は初回だけです。
 
 ちなみにClone（クローン）とは、GitHub上のリポジトリを手元のPCに「コピー」することを意味します。
-
-#@# TODO(スクショ): Clone Repositoryの画面とGitHub認証画面 → images/01_handson/clone_repository.png
 
 保存先を聞かれたら、好きな場所を選んでください。
 開くと、Cursorの画面の左側（もしくは右側）にファイルの一覧が並びます。
