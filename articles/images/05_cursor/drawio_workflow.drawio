@@ -1,45 +1,85 @@
-<mxfile host="app.diagrams.net" version="24.7.0">
-  <diagram name="Cursorで概要図を作る仕組み" id="cursor-drawio-workflow">
-    <mxGraphModel dx="800" dy="600" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="500" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2026-08-12T00:00:00.000Z" agent="Composer" version="24.7.17">
+  <diagram id="cursor-overview-diagram-flow" name="概要図をAIに描かせる仕組み">
+    <mxGraphModel dx="1100" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
 
-        <mxCell id="author" value="執筆者&#10;（原稿を執筆中）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="40" y="200" width="160" height="70" as="geometry" />
+        <mxCell id="title" value="Cursorに概要図を作ってもらう仕組み" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="30" width="480" height="40" as="geometry"/>
         </mxCell>
 
-        <mxCell id="cursor" value="Cursor&#10;（AIエージェント）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="340" y="40" width="180" height="70" as="geometry" />
+        <mxCell id="author" value="執筆者&#xa;原稿を読ませて一言指示" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="200" height="80" as="geometry"/>
         </mxCell>
 
-        <mxCell id="diagram" value="生成された図&#10;xxx.drawio.png" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="640" y="200" width="180" height="70" as="geometry" />
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontColor=#000000;" edge="1" parent="1" source="author" target="prompt">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-
-        <mxCell id="manuscript" value="原稿（.re）&#10;//image で参照" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="340" y="360" width="180" height="70" as="geometry" />
-        </mxCell>
-
-        <mxCell id="e1" value="①「概要図を作って保存して。&#10;形式はdrawioで」と指示" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;align=center;" edge="1" parent="1" source="author" target="cursor">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="e2" value="②drawio形式で&#10;生成・保存" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;align=center;" edge="1" parent="1" source="cursor" target="diagram">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="e3" value="③drawio拡張機能で確認・&#10;手直し（70点→100点）" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;align=center;" edge="1" parent="1" source="diagram" target="author">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="730" y="330" />
-              <mxPoint x="120" y="330" />
-            </Array>
+        <mxCell id="label1" value="①" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" connectable="0" parent="arrow1">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
           </mxGeometry>
         </mxCell>
 
-        <mxCell id="e4" value="④本文から&#10;//image で参照" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=12;align=center;" edge="1" parent="1" source="author" target="manuscript">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="prompt" value="指示&#xa;「概要図を作って保存して。&#xa;形式はdrawioで。」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="110" width="220" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontColor=#000000;" edge="1" parent="1" source="prompt" target="cursor">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="label2" value="②" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" connectable="0" parent="arrow2">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="cursor" value="Cursor（AI）&#xa;原稿を読んで図を生成&#xa;~~.drawio.png で保存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="700" y="110" width="220" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontColor=#000000;" edge="1" parent="1" source="cursor" target="output">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="label3" value="③" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" connectable="0" parent="arrow3">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="output" value="生成された図&#xa;（だいたい70点）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="710" y="280" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontColor=#000000;" edge="1" parent="1" source="output" target="edit">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="label4" value="④" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" connectable="0" parent="arrow4">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="edit" value="Cursor内のdrawio拡張で&#xa;ちょちょっと手直し" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="220" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontColor=#000000;" edge="1" parent="1" source="edit" target="done">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="label5" value="⑤" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" connectable="0" parent="arrow5">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="done" value="完成した概要図&#xa;本文から //image で参照" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="note" value="ポイント&#xa;・~~.drawio.png なら、編集も画像参照も同じファイルで完結&#xa;・ゼロから1時間 → 手直し10分（あくまで例）&#xa;・Anthropic系モデル（Opus / Sonnet）が得意" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;align=left;spacingLeft=10;spacingTop=6;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="420" width="840" height="90" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
