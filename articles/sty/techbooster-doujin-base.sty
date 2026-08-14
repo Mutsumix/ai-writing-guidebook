@@ -194,8 +194,9 @@
   \@mainmattertrue
   \pagenumbering{arabic}}
 
-% 奥付を必ず偶数開始
-\renewcommand{\reviewcolophon}[0]{\clearoddpage}
+% 奥付は直前のページの次から開始（空白ページを挟まない）
+% 以前は偶数開始(\clearoddpage)だったが、中綴じ入稿のページ数調整とノンブル連続のため\clearpageに変更
+\renewcommand{\reviewcolophon}[0]{\clearpage}
 
 \tracingpatches
 \ifdefined\review@colophon
