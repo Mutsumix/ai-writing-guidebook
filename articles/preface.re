@@ -45,8 +45,6 @@
 本書に記載された内容は、情報の提供のみを目的としています。したがって、本書を用いたプログラムやツールの使用は、必ずご自身の責任と判断によって行ってください。これらの情報によって生じた結果について、著者はいかなる責任も負いません。
 
 また、本書はできるだけ正確を期すように努めましたが、不正確あるいは誤認と思われるような箇所がありましたら、必要に応じて適時改訂を行いますので、GitHub@<fn>{github}のIssueやPull Request、もしくはX@<fn>{x}で筆者までお知らせいただけますと幸いです。
-筆者のこれまでの技術同人誌は、技術書典のサークルページ@<fn>{techbookfest}からご覧いただけます。
 
 //footnote[github][@<href>{https://github.com/Mutsumix/ai-writing-guidebook}]
 //footnote[x][@<href>{https://x.com/Mutsumix_dev}]
-//footnote[techbookfest][@<href>{https://techbookfest.org/organization/dZMXNJTxsAx1K1pwDsU0iA}]
