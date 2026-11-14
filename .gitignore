@@ -11,3 +11,9 @@ articles/*.html
 articles/*.xml
 articles/*.txt
 articles/_refiles/
+
+# GitHub Actionsの成果物と販売用サンプル画像
+artifacts/
+
+# 勉強会用に review-webmaker で出した HTML
+articles/webroot/
