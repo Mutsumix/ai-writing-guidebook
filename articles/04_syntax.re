@@ -1,4 +1,3 @@
-
 = Re:VIEW記法カタログ
 
 #@# AI下書き済み（R14のフォーマットガイドで記法を確認しながら作成）
@@ -30,7 +29,6 @@ Re:VIEWならびにRe:VIEWのテンプレートを使って文章を執筆する
 拡張機能の一覧を開き、「re:view」などで検索すると、atsushieno氏の「Re:VIEW」拡張機能が見つかります(@<img>{review-extension})。
 インストールすると、.reファイルの色分け表示や、次に紹介するプレビューが使えるようになります。
 
-//TODO 画像差し替え
 //image[review-extension][CursorへのRe:VIEW拡張機能のインストール][scale=0.75]
 
 //image[preview][Cursorでのプレビューの見え方（右側がプレビュー）][scale=0.75]
