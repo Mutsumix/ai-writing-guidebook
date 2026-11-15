@@ -18,8 +18,11 @@ CHAPS:
   ## 印刷所に出す方法
   - 07_publish.re
 
-# POSTDEF:
-  # - postscript.re
+POSTDEF:
+# 4コマ漫画
+  - 90_4koma.re
+
+#  - postscript.re
 
 # TODO: 
 # 『技術書をかこう!』の第X章 みたいなところは全部外す
