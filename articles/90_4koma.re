@@ -1,30 +1,24 @@
 =[nodisp] フレッシュキャベツ4コマ！
 
-#@# 画像は articles/images/90_4koma/ に置く。未配置のあいだは枠だけ出る。
-#@# 1ページ目 左: 4koma_1.png  右: 4koma_2.png
-#@# 2ページ目 左: 4koma_3.png  右: 4koma_4.png
+#@# 2本入りの画像を各ページに1枚ずつ配置する。
+#@# 通常の左綴じの本で見開きになるよう、偶数ページから開始する。
+#@# 両ページともセリフ修正版。原画像も同じフォルダに保存。
 
-#@# //embed[latex]{
-#@# \pagestyle{empty}
-#@# \newcommand{\reviewyonkomapanel}[1]{%
-#@#   \begin{minipage}[c]{0.48\textwidth}%
-#@#     \centering
-#@#     \IfFileExists{images/90_4koma/#1.png}{%
-#@#       \includegraphics[width=\linewidth,height=0.9\textheight,keepaspectratio]{images/90_4koma/#1.png}%
-#@#     }{%
-#@#       \fbox{%
-#@#         \parbox[c][0.9\textheight][c]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
-#@#           \centering\detokenize{#1.png}%
-#@#         }%
-#@#       }%
-#@#     }%
-#@#   \end{minipage}%
-#@# }
-#@# \noindent
-#@# \reviewyonkomapanel{4koma_1}\hfill
-#@# \reviewyonkomapanel{4koma_2}
-#@# \clearpage
-#@# \noindent
-#@# \reviewyonkomapanel{4koma_3}\hfill
-#@# \reviewyonkomapanel{4koma_4}
-#@# //}
+//embed[latex]{
+\clearpage
+\ifodd\value{page}
+  \thispagestyle{empty}\null\clearpage
+\fi
+\begingroup
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\noindent\makebox[\textwidth][c]{%
+  \includegraphics[width=\textwidth,height=0.98\textheight,keepaspectratio]{images/90_4koma/page-1-corrected-v2.png}%
+}\par
+\clearpage
+\noindent\makebox[\textwidth][c]{%
+  \includegraphics[width=\textwidth,height=0.98\textheight,keepaspectratio]{images/90_4koma/page-2-corrected.png}%
+}\par
+\clearpage
+\endgroup
+//}
