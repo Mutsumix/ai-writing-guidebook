@@ -41,7 +41,7 @@ GitHubではこの置き場所を「リポジトリ」と呼びます@<fn>{repos
 https://github.com/TechBooster/ReVIEW-Template
 //}
 
-画面の右上に「Use this template」という緑色のボタンがあります(@<img>{use_this_template})。
+画面の右上に「Use this template」という緑色のボタンがあります（@<img>{use_this_template}）。
 これを押して「Create a new repository」を選んでください。
 
 //image[use_this_template][「Use this template」ボタン][scale=0.75]
@@ -49,7 +49,7 @@ https://github.com/TechBooster/ReVIEW-Template
 次の画面で、リポジトリの名前を決めます。
 なんでも構いませんが、半角英数字にしてください（例: my-first-book）。
 公開範囲は「Private」（自分だけが見られる）を選んでおけば安心です。
-最後に「Create repository」を押します(@<img>{create_repository})。
+最後に「Create repository」を押します（@<img>{create_repository}）。
 
 //image[create_repository][リポジトリ作成画面][scale=0.75]
 
@@ -61,13 +61,13 @@ https://github.com/TechBooster/ReVIEW-Template
 
 GitHub上にできた置き場所を、手元のCursorで見られるようにします。
 
-Cursorを起動すると、最初の画面に「Clone Repo」という選択肢があります(@<img>{clone_repository})。
+Cursorを起動すると、最初の画面に「Clone Repo」という選択肢があります（@<img>{clone_repository}）。
 //image[clone_repository][Cursor起動直後の「Clone Repository」画面][scale=0.6]
 
 もし、次の画像のようにエージェントモードで開かれた場合は、右上のIDEボタンからモードを切り替えます（@<img>{cursor_agent}）。
-//image[cursor_agent][エージェントモードで開かれた場合は、右上のIDEボタンからモードを切り替えます][scale=0.6]
+//image[cursor_agent][エージェントモードで開かれた場合は、右上のIDEボタンからモードを切り替え][scale=0.6]
 
-「Clone Repo」を選び、「Clone from GitHub」で先ほど作ったリポジトリを選んでください(@<img>{clone_in_cursor})。
+「Clone Repo」を選び、「Clone from GitHub」で先ほど作ったリポジトリを選んでください（@<img>{clone_in_cursor}）。
 
 //image[clone_in_cursor][Cursorでリポジトリをクローンしている画面][scale=0.75]
 
@@ -76,7 +76,7 @@ Cursorを起動すると、最初の画面に「Clone Repo」という選択肢�
 ちなみにClone（クローン）とは、GitHub上のリポジトリを手元のPCに「コピー」することを意味します。
 
 保存先を聞かれたら、PC上の好きな場所を選んでください。
-開くと、Cursorの画面の左側（もしくは右側）にファイルの一覧が並びます(@<img>{cursor})。
+開くと、Cursorの画面の左側（もしくは右側）にファイルの一覧が並びます（@<img>{cursor}）。
 「articles」というフォルダの中に、拡張子が「.re」のファイルがあります。
 これがあなたの原稿になります。
 
@@ -137,7 +137,7 @@ texdocumentclass: ["review-jsbook", ...省略]
 書いた文章を、GitHubに送ります。
 まずファイルを保存してください。
 
-次に、Cursorの左端に並んでいるアイコンから、ソース管理（枝分かれした線のアイコン）を開きます(@<img>{source_control})。
+次に、Cursorの左端に並んでいるアイコンから、ソース管理（枝分かれした線のアイコン）を開きます（@<img>{source_control}）。
 
 //image[source_control][ソース管理パネル][scale=0.75]
 
@@ -146,7 +146,7 @@ texdocumentclass: ["review-jsbook", ...省略]
 
 上部の入力欄に、ひとことメッセージを書いてください。
 「最初の一文」でも、今日の日付でも、なんでもいいです。
-あとから見返したとき、何をしたか思い出すためのメモです(@<img>{first_commit})。
+あとから見返したとき、何をしたか思い出すためのメモです（@<img>{first_commit}）。
 
 //image[first_commit][コミットメッセージの入力とCommitボタン][scale=0.75]
 
@@ -154,14 +154,14 @@ texdocumentclass: ["review-jsbook", ...省略]
 これで送信完了です。
 
 ちなみに解説をすると「Commit」は手元での保存の確定、「Push」はGitHubへの送信です。
-と言われてもピンとこないと思いますが、それで正常です。
+といわれてもピンとこないと思いますが、それで正常です。
 詳しくは@<chapref>{02_git_github}で説明します。
 今は「保存して送信」しているんだなと思っておいてください。
 
 == PDFをダウンロードする
 
 ブラウザで先ほど作成したリポジトリのページを開いて更新しましょう。
-先ほど送信した原稿は、GitHubの上で自動的に本の形に組み立てられています(@<img>{action_circle})。
+先ほど送信した原稿は、GitHubの上で自動的に本の形に組み立てられています（@<img>{action_circle}）。
 これには数分かかります。
 コーヒーを淹れたりコラムを読んで時間を潰してから続きを読んでください。
 
@@ -186,7 +186,7 @@ Gitがあると、いつ・誰が・どこを・どの段階のドキュメン�
 GitHubのページを開くと、先ほどのコミットメッセージの横に●があるのが分かります。
 ここの●をクリックすると、今どんな処理が行われているかが表示されます。処理が終わると●がチェックマークに変わります。
 
-GitHubの自分のリポジトリのページを開き、上部の「Actions」タブをクリックしてください(@<img>{github_actions_tab})。
+GitHubの自分のリポジトリのページを開き、上部の「Actions」タブをクリックしてください（@<img>{github_actions_tab}）。
 
 //image[github_actions_tab][リポジトリ上部の「Actions」タブ][scale=0.75]
 
@@ -196,7 +196,7 @@ GitHubの自分のリポジトリのページを開き、上部の「Actions」�
 #@# //image[actions_list][Actionsタブ。緑のチェックマークが付いていれば完了][scale=0.75]
 
 一番上の行をクリックすると、詳細画面が開きます。
-下にスクロールすると「Artifacts」という欄があり、その中に「Output documents」があります(@<img>{actions_artifacts})。
+下にスクロールすると「Artifacts」という欄があり、その中に「Output documents」があります（@<img>{actions_artifacts}）。
 
 //image[actions_artifacts][Artifacts欄の「Output documents」。クリックするとダウンロードされる][scale=0.75]
 
@@ -208,7 +208,7 @@ zipを開くと、中にPDFが入っています。
 
 == 本の完成
 
-いま開いたPDFを見てください(@<img>{artifact})。
+いま開いたPDFを見てください（@<img>{artifact}）。
 表紙があり、目次があり、先ほどあなたの書いた文章が、本の体裁で組まれています@<fn>{template_pages}。
 技術書典やBOOTHといった電子書籍のオンラインマーケットであれば、そのまま販売可能なデータです。
 
@@ -217,4 +217,4 @@ zipを開くと、中にPDFが入っています。
 //image[artifact][完成したPDF][scale=0.75]
 
 本を作る仕組みがこれで完成しました。
-驚くほど簡単に書籍のデータが出来上がりました。
+驚くほど簡単に書籍のデータができ上がりました。
