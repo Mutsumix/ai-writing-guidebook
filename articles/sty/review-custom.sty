@@ -1,1 +1,13 @@
 % for user-defined macro
+
+% Keep serial page numbers continuous across the cover and front matter.
+% review-jsbook otherwise resets the counter after the cover pages.
+\makeatletter
+\ifrecls@serialpage
+  \patchcmd{\frontmatter}
+    {\setcounter{page}{\the\recls@startpage}}
+    {}
+    {}
+    {\PackageError{review-custom}{Failed to preserve serial page numbers}{Check the review-jsbook frontmatter definition.}}
+\fi
+\makeatother
