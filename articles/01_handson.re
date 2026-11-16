@@ -60,15 +60,15 @@ https://github.com/TechBooster/ReVIEW-Template
 
 GitHub上にできた置き場所を、手元のCursorで見られるようにします。
 
-Cursorを起動すると、最初の画面に「Clone Repository」という選択肢があります(@<img>{clone_repository})。
-//image[clone_repository][Cursor起動直後の「Clone Repository」画面][scale=0.75]
+Cursorを起動すると、最初の画面に「Clone Repo」という選択肢があります(@<img>{clone_repository})。
+//image[clone_repository][Cursor起動直後の「Clone Repository」画面][scale=0.6]
 
 もし、次の画像のようにエージェントモードで開かれた場合は、右上のIDEボタンからモードを切り替えます（@<img>{cursor_agent}）。
-//image[cursor_agent][エージェントモードで開かれた場合は、右上のIDEボタンからモードを切り替えます][scale=0.75]
+//image[cursor_agent][エージェントモードで開かれた場合は、右上のIDEボタンからモードを切り替えます][scale=0.6]
 
 これを選び、「Clone from GitHub」でさきほど作ったリポジトリを選んでください(@<img>{clone_in_cursor})。
 
-//image[clone_in_cursor][Cursorでリポジトリをクローンしている画面][scale=0.75]
+//image[clone_in_cursor][Cursorでリポジトリをクローンしている画面][scale=0.]
 
 途中でGitHubとの連携を求める画面が出たら、案内に従って許可します。この認証は初回だけです。
 
