@@ -55,3 +55,9 @@ alwaysApply: true
 - 参照: @<img>{label}、@<list>{label}、@<hd>{label}
 - コード: //list[label][キャプション]{ ... //}
 - 本書4章が記法カタログなので、記法の正確性は R14(Re:VIEW公式)で確認する
+
+## PDFの保存場所
+
+- 書籍の完成PDFは `output/pdf/` にまとめる。通常版は `ai-writing-guidebook.pdf`、互換版は `ai-writing-guidebook-compatible.pdf`。
+- 過去の確認用PDFは `output/pdf/archive/` に置き、リポジトリ直下や `artifacts/` に完成PDFのコピーを増やさない。
+- ビルドで `articles/` にできたPDFも、確認後に `output/pdf/` へ移す。テンプレート付属の `pdf-sample/` は参考資料として維持する。

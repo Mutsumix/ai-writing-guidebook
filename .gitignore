@@ -17,3 +17,5 @@ artifacts/
 
 # 勉強会用に review-webmaker で出した HTML
 articles/webroot/
+# PDFの完成版・過去の確認用出力
+/output/
