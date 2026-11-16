@@ -1,12 +1,12 @@
 =[nodisp] 本書全体のまとめ
 
-#@# //embed[latex]{
-#@# \markboth{本書全体のまとめ}{本書全体のまとめ}
-#@# \thispagestyle{plainhead}
-#@# \setcounter{footnote}{0}
-#@# \noindent{\Large\bfseries 本書全体のまとめ}\par
-#@# \vspace{\baselineskip}
-#@# //}
+//embed[latex]{
+\markboth{本書全体のまとめ}{本書全体のまとめ}
+\thispagestyle{plainhead}
+\setcounter{footnote}{0}
+\noindent{\Large\bfseries 本書全体のまとめ}\par
+\vspace{\baselineskip}
+//}
 
 
 筆者はこれまで4冊の技術同人誌を執筆してきました。@<fn>{techbookfest}
