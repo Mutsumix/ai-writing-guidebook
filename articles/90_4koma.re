@@ -17,7 +17,7 @@
 }\par
 \clearpage
 \noindent\makebox[\textwidth][c]{%
-  \includegraphics[width=\textwidth,height=0.98\textheight,keepaspectratio]{images/90_4koma/page-2-party-aspect-mouth-fixed.png}%
+  \includegraphics[width=\textwidth,height=0.98\textheight,keepaspectratio]{images/90_4koma/page-2-party-aspect-mouth-kanji-fixed.png}%
 }\par
 \clearpage
 \endgroup
