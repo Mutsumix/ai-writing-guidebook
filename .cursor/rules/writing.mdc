@@ -61,3 +61,9 @@ alwaysApply: true
 - 書籍の完成PDFは `output/pdf/` にまとめる。通常版は `ai-writing-guidebook.pdf`、互換版は `ai-writing-guidebook-compatible.pdf`。
 - 過去の確認用PDFは `output/pdf/archive/` に置き、リポジトリ直下や `artifacts/` に完成PDFのコピーを増やさない。
 - ビルドで `articles/` にできたPDFも、確認後に `output/pdf/` へ移す。テンプレート付属の `pdf-sample/` は参考資料として維持する。
+
+## 漫画画像の調整
+
+- 原画像の縦横比を変えない。縦と横で異なる倍率を指定してコマ枠に合わせない。
+- 枠の高さを揃える際は、元の絵とセリフの比率を維持し、不足部分の背景補完やトリミングで対応する。
+- 原画像で下端に見切れているキャラクターは、見切れ方を維持する。手足のない全身像にしない。
